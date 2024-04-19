@@ -3,7 +3,7 @@
 import SearchInput from './SearchInput'
 
 const Library = async () => {
-  const { data: books } = await getBooks()
+  // const { data: books } = await getBooks()
 
   return (
     <div className='h-96 mt-6 p-2 flex flex-col overflow-auto gap-2 w-[23rem] rounded-md bg-green-300'>
