@@ -69,7 +69,7 @@ export const addBook = async (prevState: any, data: FormData) => {
 
       return error
     } else {
-      const res = await fetch('http://dcclibproject.vercel.app/api/books', {
+      const res = await fetch(URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -103,16 +103,13 @@ export const editBook = async (id: string, data: FormData) => {
 
       return error
     } else {
-      const res = await fetch(
-        `http://dcclibproject.vercel.app/api/books/${id}`,
-        {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(validatedFields.data),
-        }
-      )
+      const res = await fetch(`${URL}/${id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(validatedFields.data),
+      })
 
       if (!res.ok) {
         throw new Error('Failed to add book')
@@ -130,7 +127,7 @@ export const editBook = async (id: string, data: FormData) => {
 
 export const deleteBook = async (id: string) => {
   try {
-    const res = await fetch(`http://dcclibproject.vercel.app/api/books/${id}`, {
+    const res = await fetch(`${URL}/${id}`, {
       method: 'DELETE',
     })
 
@@ -167,7 +164,7 @@ export const updateBook = async (id: string, data: Book) => {
 export const searchBook = async (name: string) => {
   try {
     const res = await fetch(
-      `http://dcclibproject.vercel.app/api/search/${name}`
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/search/${name}`
     )
 
     if (!res.ok) {
