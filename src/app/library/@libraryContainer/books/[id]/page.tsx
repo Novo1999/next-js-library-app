@@ -8,7 +8,7 @@ const BookSlot = async ({ params: { id } }: { params: { id: string } }) => {
   const { book } = await getBook(id)
 
   return (
-    <div className='h-[40rem] w-[60rem] bg-stone-100 shadow-md rounded-md p-10'>
+    <div className='h-[43rem] w-[60rem] bg-stone-100 shadow-md rounded-md p-10'>
       <h1 className='text-3xl font-bold'>LIBRARY MANAGEMENT SYSTEM</h1>
       <div className='flex justify-between'>
         <BookForm />
