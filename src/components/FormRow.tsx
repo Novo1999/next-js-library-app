@@ -37,7 +37,7 @@ const FormRow = ({
         transition={{ delay: 0.5 }}
         className='text-end text-red-500 text-sm mt-2'
       >
-        {errors[name]}
+        {errors?.[name]}
       </motion.p>
     </div>
   )
