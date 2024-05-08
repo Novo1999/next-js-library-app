@@ -1,5 +1,4 @@
 import revalidate from '@/app/actions'
-import { Book } from '@/interfaces'
 import { BASE_URL } from '@/util/constants'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
