@@ -1,4 +1,3 @@
-import { Book } from '@/interfaces'
 import { motion } from 'framer'
 
 const FormRow = ({
@@ -12,7 +11,8 @@ const FormRow = ({
 }) => {
   const name = title.toLowerCase().split(' ').join('_')
   const value = book?.[name as keyof Book]
-
+  
+  
   const bookEditing = !!book
 
   return (
@@ -41,5 +41,6 @@ const FormRow = ({
       </motion.p>
     </div>
   )
+  
 }
 export default FormRow
