@@ -1,5 +1,4 @@
 'use client'
-import { Book } from '@/interfaces'
 import { motion } from 'framer'
 import Link from 'next/link'
 import { AiFillDollarCircle } from 'react-icons/ai'
