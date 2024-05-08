@@ -1,4 +1,4 @@
-export interface Book {
+interface Book {
   _id: string
   book_name: string
   author_name: string
@@ -13,4 +13,12 @@ export interface Book {
   book_publisher: string
   book_price: number
   entry_date: String
+}
+
+interface ButtonProp {
+  icon: ReactNode
+  children: ReactNode
+  className: string
+  id?: string
+  operation?: string
 }
