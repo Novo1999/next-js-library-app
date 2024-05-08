@@ -1,4 +1,3 @@
-import { Book as IBook } from '@/interfaces'
 import connectMongo from '@/lib/connectDb'
 import Book from '@/models/book'
 import { NextRequest, NextResponse } from 'next/server'
