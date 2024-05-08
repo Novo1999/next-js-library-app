@@ -1,5 +1,4 @@
 'use client'
-import { Book } from '@/interfaces'
 import { addBook, editBook } from '@/lib/book-data'
 import { formElements, options } from '@/util/constants'
 import { motion } from 'framer'
