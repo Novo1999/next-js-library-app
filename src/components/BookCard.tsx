@@ -1,4 +1,3 @@
-import { Book } from '@/interfaces'
 import Link from 'next/link'
 import { BiEdit } from 'react-icons/bi'
 import { MdDelete } from 'react-icons/md'
