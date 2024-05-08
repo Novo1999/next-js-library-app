@@ -13,13 +13,7 @@ const Button = ({
   className,
   operation,
   id,
-}: {
-  icon: ReactNode
-  children: ReactNode
-  className: string
-  id?: string
-  operation?: string
-}) => {
+}: ButtonProp) => {
   const [showToast, setShowToast] = useState(false)
   const router = useRouter()
   const handleDelete = async (id: string) => {
