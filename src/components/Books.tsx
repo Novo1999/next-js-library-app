@@ -1,5 +1,4 @@
 'use client'
-import { Book } from '@/interfaces'
 import { searchBook } from '@/lib/book-data'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
