@@ -1,4 +1,3 @@
-import { Book } from '@/interfaces'
 
 const BookTypeSelector = ({
   options,
