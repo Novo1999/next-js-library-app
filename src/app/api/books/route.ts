@@ -16,7 +16,7 @@ export const POST = async (req: NextRequest) => {
   try {
     await connectMongo()
 
-    const body: IBook = await req.json()
+    const body: Book = await req.json()
 
     const bookObj = {
       book_name: body.book_name,
